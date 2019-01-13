@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_8">
+
+        <ImageView
+            android:id="@+id/iv_qr_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/marginRight_10"
+            android:scaleType="centerCrop"
+            android:src="@drawable/qr_code" />
+
+        <EditText
+            android:id="@+id/ed_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/marginRight_10"
+            android:layout_toLeftOf="@id/search_btn"
+            android:layout_toRightOf="@id/iv_qr_code"
+            android:background="@drawable/search_shope"
+            android:drawableLeft="@drawable/search_btn"
+            android:drawableRight="@drawable/yuyin_btn"
+            android:hint="@string/hint_shearch"
+            android:textColorHint="#ccc" />
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/search_shope"
+            android:gravity="center"
+            android:text="搜索"
+            android:textColor="#ccc"
+            android:textSize="@dimen/text_size_14" />
+
+    </RelativeLayout>
+</LinearLayout>
